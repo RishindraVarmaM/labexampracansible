@@ -33,7 +33,7 @@ jobs:
           file: ./backend/backend.Dockerfile
           push: true
           platforms: linux/amd64,linux/arm64
-          tags: ${{ secrets.DOCKER_USERNAME }}/pracpro-backend:prac
+          tags: ${{ secrets.DOCKER_USERNAME }}/ansible-pracbackend:prac
 
       # Step 5 — Build & Push Frontend Image
       - name: Build and Push Frontend Image
@@ -43,4 +43,4 @@ jobs:
           file: ./frontend/frontend.Dockerfile
           push: true
           platforms: linux/amd64,linux/arm64
-          tags: ${{ secrets.DOCKER_USERNAME }}/pracpro-frontend:prac
+          tags: ${{ secrets.DOCKER_USERNAME }}/ansible-pracbackend:prac
